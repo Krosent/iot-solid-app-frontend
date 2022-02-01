@@ -5,33 +5,25 @@
       Work in Progress
     </p>
     <div id="authorization-container">
-      <button onclick="">Authorize to Solid POD</button>
+      <p>Hello user: <i>{{ webID }}</i> to the dashboard!</p>
     </div>
   </div>
 </template>
 
 <script>
 
-
-import Vue from "vue";
-
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String
-  }
-}
-
-
-new Vue({
-  el: '#authorization-container',
+    msg: String,
+    webID: String
+  },
   methods: {
     say: function (message) {
       console.log(message)
     }
   }
-})
-
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -49,5 +41,9 @@ li {
 }
 a {
   color: #42b983;
+}
+
+i {
+  color: green;
 }
 </style>

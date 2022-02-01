@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+
 // import {getDefaultSession, handleIncomingRedirect, login} from "@inrupt/solid-client-authn-browser";
 
 Vue.config.productionTip = false
